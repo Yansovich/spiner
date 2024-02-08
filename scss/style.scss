@@ -203,40 +203,261 @@ body {
         //     }
         // }
 
+        // .grid {
+        //     display: grid;
+        //     height: 80px;
+        //     grid-gap: 10px;
+        //     grid-template-columns: repeat(4, [col]1fr);
+        //     grid-template-rows: repeat(3, [row]1fr);
+
+        //     &-item1 {
+        //         background-color: aqua;
+        //         grid-area: 1 / 1 / 2 / 2;
+        //     }
+
+        //     &-item2 {
+        //         background-color: blueviolet;
+        //         grid-area: 1 / 2 / 2 / 3;
+        //     }
+
+        //     &-item3 {
+        //         background-color: burlywood;
+        //         grid-area: 1 / 3 / 3 / 5;
+        //     }
+
+        //     &-item4 {
+        //         background-color: gray;
+        //         grid-area: 2 / 1 / 3 / 3;
+        //     }
+
+        //     &-item5 {
+        //         background-color: pink;
+        //         grid-area: 3 / 1 / 4 / 2;
+        //     }
+
+        //     &-item6 {
+        //         background-color: yellow;
+        //         grid-area: 3 / 2 / 4 / 5;
+        //     }
+        // }
+
+
+        // .grid {
+        //     display: grid;
+        //     height: 100vh;
+        //     grid-gap: 5px;
+        //     grid-template-columns: repeat(4, 1fr);
+        //     grid-template-rows: repeat(4, 1fr);
+        //     // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        //     // grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        //     // grid-template-rows: 1fr;
+        //     // justify-content: start;
+        //     // align-content: normal;
+        //     grid-auto-flow: dense;
+        //     &-item:nth-child(2),
+        //     &-item:nth-child(3),
+        //     &-item:nth-child(3), {
+        //         grid-column: 2 span;
+        //     }
+        // }
+          
+        //     &-item {
+        //         width: 100px;
+        //     //     height: 100px;
+        //     // }
+
+        //     &-item1 {
+        //         background-color: rgb(10, 185, 185);
+          
+        //     }
+
+        //     &-item2 {
+        //         background-color: rgb(115, 44, 182);
+             
+        //     }
+
+        //     &-item3 {
+        //         background-color: rgb(247, 166, 60);
+                
+        //     }
+            
+        //     &-item4 {
+        //         background-color: rgb(117, 221, 126);
+                
+        //     }
+            
+        //     &-item5 {
+        //         background-color: rgb(84, 149, 192);
+                
+        //     }
+            
+        //     &-item6 {
+        //         background-color: rgb(116, 156, 21);
+                
+        //     }
+            
+        //     &-item7 {
+        //         background-color: rgb(165, 86, 180);
+                
+        //     }
+            
+        //     &-item8 {
+        //         background-color: rgb(179, 63, 117);
+                
+        //     }
+            
+        //     &-item9 {
+        //         background-color: rgb(133, 30, 35);
+                
+        //     }
+            
+        //     &-item10 {
+        //         background-color: rgb(119, 77, 197);
+                
+        //     }
+            
+        //     &-item11 {
+        //         background-color: rgb(32, 153, 72);
+       
+        //     }
+        // }
+
+
         .grid {
             display: grid;
-            height: 80px;
-            grid-gap: 10px;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-
-            &-item1 {
-                background-color: aqua;
-                grid-area: 1 / 1 / 2 / 2;
-            }
-
-            &-item2 {
-                background-color: blueviolet;
-                grid-area: 1 / 2 / 2 / 3;
-            }
-
-            &-item3 {
-                background-color: burlywood;
-                grid-area: 1 / 3 / 3 / 5;
-            }
-
-            &-item4 {
-                background-color: gray;
-                grid-area: 2 / 1 / 3 / 3;
-            }
-
-            &-item5 {
-                background-color: pink;
-                grid-area: 3 / 1 / 4 / 2;
-            }
-
-            &-item6 {
-                background-color: yellow;
-                grid-area: 3 / 2 / 4 / 5;
-            }
+            // height: 100vh;
+            // grid-gap: 5px;
+            grid-template-areas: 
+            "head head"
+            "nav main"
+            "nav footer"
+            ;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 75px 1fr 50px;
+      
+                    // &-item {
+                    //     width: 100px;
+                    // //     height: 100px;
+                    // }
+        
+                    &-item1 {
+                        grid-area: head;
+                        background-color: rgb(10, 185, 185);
+                  
+                    }
+        
+                    &-item2 {
+                        grid-area: nav;
+                        background-color: rgb(115, 44, 182);
+                     
+                    }
+        
+                    &-item3 {
+                        grid-area: main;
+                        background-color: rgb(247, 166, 60);
+                        
+                    }
+                    
+                    &-item4 {
+                        grid-area: footer;
+                        background-color: rgb(117, 221, 126);
+                        
+                    }
         }
+
+
+        .calk {
+            display: grid;
+            width: 294px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 72px);
+
+            &-btn {
+                // height: 72px;
+            }
+
+            &-btn1 {
+                grid-column: 4 span;
+                background-color: rgb(117, 221, 126);
+                // grid-area: 1 / 1 / 2 / 5;
+            }
+
+            &-btn2 {
+               
+                background-color: rgb(117, 221, 126);
+                // grid-area: 2 / 1 / 3 / 2;
+            }
+
+            &-btn3 {
+               
+                background-color: rgb(117, 221, 126);
+                // grid-area: 2 / 2 / 3 / 3;
+            }
+
+            &-btn3 {
+                // grid-area: 2;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn4 {
+                // grid-area: 3;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn5 {
+                // grid-area: 4;
+                grid-row: 2 span;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn6 {
+                // grid-area: 5;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn7 {
+                // grid-area: 6;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn8 {
+                // grid-area: 7;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn9 {
+                // grid-area: 8;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn10 {
+                // grid-area: 9;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn11 {
+                // grid-area: Clear;
+                // grid-row: 2;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn12 {
+                // grid-area: Enter;
+                grid-row: 2 span;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn13 {
+                // grid-area: 00;
+                background-color: rgb(117, 221, 126);
+            }
+
+            &-btn14 {
+                // grid-area: Backspace;
+                grid-column: 2 span;
+                background-color: rgb(117, 221, 126);
+            }
+
+          
+        }
+   
